@@ -22,6 +22,14 @@ namespace LLVG20241001Test.Tests
             // Assert
             Assert.AreEqual(0, resultado);
         }
+        [TestMethod]
+        public void CalcularRaizCuadrada_AceptaNumeroDouble()
+        {
+            // Act
+            var resultado = calculadora.CalcularRaizCuadrada(4.0);
+            // Assert
+            Assert.AreEqual(2, resultado);
+        }
 
         [TestMethod]
         public void CalcularRaizCuadrada_Negativo_LanzaExcepcion()
